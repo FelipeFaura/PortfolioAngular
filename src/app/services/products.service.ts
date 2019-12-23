@@ -49,7 +49,7 @@ export class ProductsService {
       this.getProducts().then(() => {
         // codigo que se ejecutará despues de tener los productos.
 
-        //this.filterProducts(searchTerm);
+        this.filterProducts(searchTerm);
       });
     } else {
       // Aplicaremos el filtro.
