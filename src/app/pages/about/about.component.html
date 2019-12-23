@@ -5,13 +5,12 @@
 
     <div class="animated fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3" *ngFor="let member of infoService.teamMember">
       <img src="{{member.url}}" alt="" class="au-mb-3">
-      <h5 class="ae-u-bolder au-mt-2">{{member.nombre}}</h5>
-      <p class="ae-u-bolder au-mb-3">{{member.subtitulo}}</p>
-      <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{member.frase}}</p>
+      <h5 class="animated fadeIn ae-u-bolder au-mt-2">{{member.nombre}}</h5>
+      <p class="animated fadeIn ae-u-bolder au-mb-3">{{member.subtitulo}}</p>
+      <p class="animated fadeIn au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{member.frase}}</p>
       <a target="_blank" href="Https://twitter.com/{{member.twitter}}"
         class="ae-u-bolder au-underline">{{member.twitter}}</a>
     </div>
-
 
   </div>
   <div class="ae-grid au-pt-2">

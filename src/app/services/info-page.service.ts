@@ -33,7 +33,6 @@ export class InfoPageService {
       .subscribe((resp: TeamMember[]) => {
         this.charged = true;
         this.teamMember = resp;
-        console.log(this.teamMember);
       });
   }
 }
