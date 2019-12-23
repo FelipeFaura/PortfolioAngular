@@ -10,13 +10,13 @@ import { TeamMember } from '../interfaces/team';
 
 export class InfoPageService {
 
-  info: Info;
+  info: Info = {};
   charged = false;
   teamMember: TeamMember[];
 
   constructor(private http: HttpClient) {
     this.getInfo();
-    //this.getTeam();
+    this.getTeam();
 
   }
 
