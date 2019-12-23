@@ -12,7 +12,7 @@ export class InfoPageService {
 
   info: Info = {};
   charged = false;
-  teamMember: TeamMember[];
+  teamMember: TeamMember[] = [];
 
   constructor(private http: HttpClient) {
     this.getInfo();
@@ -25,14 +25,12 @@ export class InfoPageService {
       .subscribe((resp: Info) => {
         this.charged = true;
         this.info = resp;
-        console.log(this.info);
-        console.log(this.info.titulo);
       });
   }
 
   private getTeam() {
-    this.http.get('https://portfolio-55393.firebaseio.com/equipo/0.json')
-      .subscribe((resp: any[]) => {
+    this.http.get('https://portfolio-55393.firebaseio.com/equipo.json')
+      .subscribe((resp: TeamMember[]) => {
         this.charged = true;
         this.teamMember = resp;
         console.log(this.teamMember);
