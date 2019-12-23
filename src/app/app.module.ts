@@ -10,6 +10,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PortfolioItemComponent } from './pages/portfolio-item/portfolio-item.component';
 import { from } from 'rxjs';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { from } from 'rxjs';
     FooterComponent,
     PortfolioComponent,
     AboutComponent,
-    PortfolioItemComponent
+    PortfolioItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

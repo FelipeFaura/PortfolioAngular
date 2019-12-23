@@ -12,4 +12,5 @@ export class AppComponent {
   constructor(private infoPage: InfoPageService, public productService: ProductsService) {
 
   }
+
 }
